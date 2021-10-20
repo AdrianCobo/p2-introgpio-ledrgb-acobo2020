@@ -76,7 +76,7 @@ def main():
         elif accion_usuario == "apagar azul":
             apagar(azulPin)
 
-        if accion_usuario == "encender amarillo":
+        elif accion_usuario == "encender amarillo":
             encenderAmarillo()
         elif accion_usuario == "apagar amarillo":
             apagar(rojoPin)
@@ -102,6 +102,9 @@ def main():
         elif accion_usuario == "salir":
             flag = True
             GPIO.cleanup()
+        else:
+            print("error,has escrito mal algo")
+
         time.sleep(1)
 
 if __name__ == "__main__":
