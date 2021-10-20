@@ -20,7 +20,7 @@ def apagar(pin):
 Si quieres ver un video de demostracion, pulsa [aqui](https://drive.google.com/file/d/1Yw4JBJx-mFUy4UtezkkxtjzKz3q6Hydd/view?usp=sharing).
 En el video podemos ver como como cambian los colores del led rgb.
 
-Preguntasd frecuentes:.
+Preguntas frecuentes:.
 
 Pregunta: estoy metiendo el comando pero no hace nada.
 
