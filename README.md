@@ -25,11 +25,7 @@ Preguntasd frecuentes:.
 Pregunta: estoy metiendo el comando pero no hace nada.
 
 respuesta:.
-Seguramente estes metiendo mal el comando. Ejemplos de comando correctos:.
-salir.
-apagar verde.
-encender azul.
-encender azulClarito.
+Seguramente estes metiendo mal el comando. Ejemplos de comando correctos: salir, apagar verde, encender azul,encender azulClarito.
 
 Tienes que escribir los colores talcual te los indica al cargar el programa
 
