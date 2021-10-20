@@ -66,12 +66,12 @@ def main():
         elif accion_usuario == "apagar rojo":
             apagar(rojoPin)
 
-        if accion_usuario == "encender verde":
+        elif accion_usuario == "encender verde":
             encenderVerde()
         elif accion_usuario == "apagar verde":
             apagar(verdePin)
 
-        if accion_usuario == "encender azul":
+        elif accion_usuario == "encender azul":
             encenderAzul()
         elif accion_usuario == "apagar azul":
             apagar(azulPin)
@@ -82,19 +82,19 @@ def main():
             apagar(rojoPin)
             apagar(verdePin)
 
-        if accion_usuario == "encender rosa":
+        elif accion_usuario == "encender rosa":
             encenderRosa()
         elif accion_usuario == "apagar rosa":
             apagar(rojoPin)
             apagar(azulPin)
 
-        if accion_usuario == "encender blanco":
+        elif accion_usuario == "encender blanco":
             encenderBlanco()
         elif accion_usuario == "apagar blanco":
             apagar(rojoPin)
             apagar(azulPin)
             apagar(verdePin)
-        if accion_usuario == "encender azulClarito":
+        elif accion_usuario == "encender azulClarito":
             encenderAzulClarito()
         elif accion_usuario == "apagar azulClarito":
             apagar(verdePin)
@@ -102,7 +102,6 @@ def main():
         elif accion_usuario == "salir":
             flag = True
             GPIO.cleanup()
-
         time.sleep(1)
 
 if __name__ == "__main__":
