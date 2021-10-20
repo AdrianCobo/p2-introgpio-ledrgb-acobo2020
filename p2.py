@@ -56,30 +56,56 @@ def encenderAzulClarito():
 
 def main():
 
-    encenderRojo()
-    input("Pulsa para tornar verde")
-    encenderVerde()
+    flag = False
+    print("los colores disponibles para encender o apagar son: rojo,verde,azul,rosa,blanco,amarillo y azulClarito")
+    print("si no funciona es por que has escrito mal el comando,vuelve a intentarlo o lee el read.me")
+    while flag == False:
+        accion_usuario = input("que accion quieres realizar (encender/apagar nombreColorMostradoAntriormente o salir) ")
+        if accion_usuario == "encender rojo":
+            encenderRojo()
+        elif accion_usuario == "apagar rojo":
+            apagar(rojoPin)
 
-    input("Pulsa para tornar azul")
-    encenderAzul()
+        elif accion_usuario == "encender verde":
+            encenderVerde()
+        elif accion_usuario == "apagar verde":
+            apagar(verdePin)
 
-    input("Pulsa para tornar rosa")
-    encenderRosa()
+        elif accion_usuario == "encender azul":
+            encenderAzul()
+        elif accion_usuario == "apagar azul":
+            apagar(azulPin)
 
-    input("Pulsa para tornar blanco")
-    encenderBlanco()
+        elif accion_usuario == "encender amarillo":
+            encenderAmarillo()
+        elif accion_usuario == "apagar amarillo":
+            apagar(rojoPin)
+            apagar(verdePin)
 
-    input("Pulsa para tornar amarillo")
-    encenderAmarillo()
+        elif accion_usuario == "encender rosa":
+            encenderRosa()
+        elif accion_usuario == "apagar rosa":
+            apagar(rojoPin)
+            apagar(azulPin)
 
-    input("Pulsa para tornar azulClarito")
-    encenderAzulClarito()
+        elif accion_usuario == "encender blanco":
+            encenderBlanco()
+        elif accion_usuario == "apagar blanco":
+            apagar(rojoPin)
+            apagar(azulPin)
+            apagar(verdePin)
+        elif accion_usuario == "encender azulClarito":
+            encenderAzulClarito()
+        elif accion_usuario == "apagar azulClarito":
+            apagar(verdePin)
+            apagar(azulPin)
+        elif accion_usuario == "salir":
+            flag = True
+            GPIO.cleanup()
+        else:
+            print("error,has escrito mal algo")
 
-    input("Pulsa para apagar")
-    apagar(rojoPin)
-    apagar(azulPin)
-    apagar(verdePin)
-    GPIO.cleanup()
+        time.sleep(1)
 
 if __name__ == "__main__":
     main()
